@@ -1,0 +1,178 @@
+/* Admin Panel Styles */
+.admin-body {
+    background: #141414;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Login Form */
+.login-form {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #222;
+    color: #ffffff;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    background: #e50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #f40612;
+}
+
+.error-message {
+    color: #e50914;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Dashboard Styles */
+.admin-dashboard {
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.admin-header h1 {
+    color: #ffffff;
+}
+
+.movie-form {
+    margin-bottom: 2rem;
+}
+
+.movie-form h2 {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+/* Movie Table */
+.movie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movie-table th,
+.movie-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    color: #ffffff;
+}
+
+.movie-table th {
+    background: #141414;
+    font-weight: 600;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-edit {
+    background: #2196f3;
+    color: #ffffff;
+}
+
+.btn-delete {
+    background: #f44336;
+    color: #ffffff;
+}
+
+.btn-edit:hover {
+    background: #1976d2;
+}
+
+.btn-delete:hover {
+    background: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1rem;
+    }
+
+    .movie-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+} 
